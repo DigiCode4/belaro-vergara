@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      main {
+        background-color: #f5efd6;
+        min-height: 100vh;
+        z-index: -1;
+        margin-top: 80px;
+      }
+      .menu-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: var(--cream);
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+      }
+      main h2 {
+        color: #ff6a00;
+        text-align: center;
+        margin: 20px 0;
+      }
+      .Intro {
+        display: flex;
+        flex-direction: column;
+      }
+      .Intro p {
+        color: #ff6a00;
+        text-align: center;
+      }
+      .Intro h3 {
+        color: #ff6a00;
+        text-align: center;
+      }
+
+      .Intro-Logo {
+        border-radius: 5px;
+      }
+
+      .Coffee-Drinks {
+        display: flex;
+        flex-direction: column;
+      }
+      .Pastries-Snacks {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+      }
+      .Intro,
+      .Coffee-Drinks,
+      .Pastries-Snacks {
+        border-bottom: 2px solid #fff;
+        width: 300px;
+        border-radius: 10px;
+      }
+      .Und h3 {
+        border-bottom: 2px solid #fff;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+      }
+      .Coffee-Drinks,
+      .Pastries-Snacks {
+        background-color: #4a4b32;
+      }
+      .Intro,
+      .Coffee-Drinks,
+      .Pastries-Snacks,
+      .Other {
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .Teas-Drinks {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .Other {
+        display: flex;
+        flex-direction: column;
+        background-color: #4a4b32;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+      }
+
+      .Coffee-Logo {
+        height: 30%;
+        width: 80%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+      }
+      .Pastries-Logo {
+        height: 30%;
+        width: 80%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+      }
+      .Others-Logo {
+        height: 85%;
+        width: 40%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: black;
+        border-width: 3px;
+      }
+      .Inner-O {
+        display: flex;
+        flex-direction: row;
+      }
+      .Prices-Snacks {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+      }
+      .Prices-Snacks p {
+        margin: 5px 0;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .Important {
+        background-color: #4a4b32;
+        border-radius: 10px;
+        color: #ffffff;
+      }
+      .Important h3 {
+        padding-left: 20px;
+      }
+      .Important li {
+        padding-bottom: 10px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.45);
+        text-align: right;
+        margin-top: 10px;
+      }
+
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .footer-brand img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="ShopN" align="center">
+        <span class="LogoHolder">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/14810/14810308.png"
+            alt="Shop Logo"
+            class="coffee-logo"
+          />Timplado
+        </span>
+      </h1>
+    </header>
+
+    <main>
+      <h2>Our Menu & Prices</h2>
+      <div class="menu-main">
+        <div class="Intro">
+          <b
+            ><p>
+              Discover our carefully crafted selection of coffee, teas, and
+              fresh pastries. All made with love and the finest ingredients.
+            </p></b
+          >
+          <img
+            src="https://images.unsplash.com/photo-1746454874826-fa87ebd1d40c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Shop"
+            class="Intro-Logo"
+          />
+        </div>
+        <div class="Coffee-Drinks">
+          <div class="Und"><h3>Coffee Drinks</h3></div>
+          <img
+            src="https://media.istockphoto.com/id/116650446/photo/two-cups-one-with-tea-and-the-other-with-coffee.jpg?s=2048x2048&w=is&k=20&c=K1i0ia0m4fBhVK3e2WEZhiK0osBcG9dBDx3OyFSspFU="
+            alt="Shop"
+            class="Coffee-Logo"
+          />
+          <div class="Prices-Snacks">
+            <p>Espresso------------------------$3.00</p>
+            <p>Americano----------------------$3.50</p>
+            <p>Cappuccino---------------------$4.00</p>
+            <p>Latte-----------------------------$4.50</p>
+            <p>Mocha---------------------------$5.00</p>
+          </div>
+        </div>
+        <div class="Pastries-Snacks">
+          <div class="Und"><h3>Pastries & Snacks</h3></div>
+          <img
+            src="https://media.istockphoto.com/id/496564915/photo/bread-and-buns.jpg?s=2048x2048&w=is&k=20&c=lp_EmzxK5WzHv0_toKe7rSNDbYd2DhwY81gCAn4-vso="
+            alt="Shop"
+            class="Pastries-Logo"
+          />
+          <div class="Prices-Snacks">
+            <p>Croissant------------------------$3.00</p>
+            <p>Muffin---------------------------$3.50</p>
+            <p>Bagel with Cream Cheese-----$4.00</p>
+            <p>Brownie-------------------------$3.50</p>
+            <p>Scone----------------------------$3.25</p>
+          </div>
+        </div>
+
+        <div class="Teas-Drinks">
+          <div class="Other">
+            <div class="Und"><h3 align="center">Teas & Other Drinks</h3></div>
+            <div class="Inner-O">
+              <img
+                src="https://media.istockphoto.com/id/1080387570/photo/hot-fruit-tea-with-oranges-and-cinnamon.jpg?s=2048x2048&w=is&k=20&c=ugmolF0c_pS32rGqMtuAwnrfHRBkqETUD4CmNUmg9j4="
+                alt="Shop"
+                class="Others-Logo"
+              />
+              <div class="Prices-Snacks">
+                <p>Chai Latte-----------------$4.50</p>
+                <p>Herbal Tea----------------$3.00</p>
+                <p>Matcha Latte--------------$5.00</p>
+                <p>Hot Chocolate-------------$3.50</p>
+                <p>Iced Lemon Tea-----------$4.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="Important">
+            <b><h3>Important Notes!</h3></b>
+            <ul>
+              <li>Dairy-free and gluten-free options available upon request</li>
+              <li>
+                Specialty drinks may have additional charges for extra shots or
+                premium syrups
+              </li>
+              <li>Catering services available for groups of 10 or more</li>
+              <li>Orders over $50 require a deposit for catering events</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="Contacts">
+      <div class="Contact-info">
+        <b><p>Contact Us:</p></b>
+        <p>Vergara, Kirk Samuel D. | Belaro, Leocadio IV</p>
+        <p>+63-928-555-1852</p>
+        <p>timplado@gmail.com</p>
+        <p>www.timplado.com</p>
+        <p>175 Felicidad St., Muntinlupa City, Manila</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footing">
+        <div class="footer-brand">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/14810/14810308.png"
+            alt="Timplado logo"
+          />
+          <div class="footer-brand">Timplado</div>
+        </div>
+        <div class="Button-Links">
+          <a href="index.html" target="blank">Home</a>
+          <a href="menu.html" target="blank">Menu</a>
+          <a href="events.html" target="blank">Events</a>
+        </div>
+        <p class="Copyright">© Timplado |&nbsp;&nbsp;</p>
+        <p class="attribution">Location icons created by Freepik - Flaticon</p>
+      </div>
+    </footer>
+  </body>
+</html>

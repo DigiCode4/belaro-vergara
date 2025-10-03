@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Timplado — Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --dark-olive: #3b332b;
+        --brown: #5a3f2f;
+        --darker: #231a17;
+        --cream: #efe9df;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto,
+          "Helvetica Neue", Arial;
+        background: #2f2a25;
+        color: var(--cream);
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        background-color: #f5efd6;
+        z-index: -1;
+        margin-top: 80px;
+        padding-bottom: 60px;
+        min-height: 100vh;
+        position: relative;
+      }
+
+      /* --- HEADER --- */
+      header.topbar {
+        height: 80px;
+        background: var(--dark-olive);
+        border-bottom: 4px solid rgba(0, 0, 0, 0.35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: var(--cream);
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+      }
+
+      .brand img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* --- HERO SECTION --- */
+      .hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        padding: 40px 6%;
+        background: url("https://images.unsplash.com/photo-1690983326252-ce6205fb7055?q=80&w=1860&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+          center right/cover;
+        position: relative;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(33, 27, 22, 0.45);
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        gap: 48px;
+        align-items: center;
+      }
+
+      .left-col {
+        flex: 0 0 55%;
+        padding-left: 20px;
+      }
+
+      h1.headline {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: clamp(24px, 5vw, 48px);
+        line-height: 1.1;
+        color: var(--cream);
+        margin-bottom: 30px;
+        text-shadow: 0 4px 0 rgba(0, 0, 0, 0.45);
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .map-wrap,
+      .promo {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 10px;
+        border-radius: 26px;
+        border: 6px dotted rgba(255, 255, 255, 0.6);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+        max-width: 100%;
+      }
+
+      .map-iframe {
+        width: 100%;
+        max-width: 480px;
+        height: 280px;
+        border-radius: 16px;
+        border: none;
+        display: block;
+      }
+
+      .promo {
+        width: 100%;
+        max-width: 300px;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .promo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .store-btn {
+        margin-top: 18px;
+        border-radius: 34px;
+        background: var(--darker);
+        color: var(--cream);
+        text-decoration: none;
+        font-weight: 600;
+        font-family: "Playfair Display", serif;
+        color: #d8bfa7;
+        padding: 10px 20px;
+        background: #1b1b1b;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+
+      .store-btn:hover {
+        background: linear-gradient(
+          to right,
+          rgb(255, 255, 255),
+          rgb(255, 147, 80)
+        );
+        color: black;
+      }
+
+      /* --- CONTACT STRIP --- */
+      .contact-strip {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.85),
+          rgba(0, 0, 0, 0.95)
+        );
+        border-top: 4px solid rgba(255, 255, 255, 0.03);
+        color: var(--cream);
+        padding: 30px 6%;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+
+      .contact-strip .left {
+        font-weight: 700;
+        font-family: "Playfair Display", serif;
+      }
+
+      .contact-strip .center {
+        flex: 1;
+        text-align: center;
+        font-size: 13px;
+        opacity: 0.95;
+        line-height: 1.8;
+      }
+      /* Tablets */
+      @media (max-width: 1024px) {
+        .middle {
+          flex-direction: column;
+          padding: 30px 20px;
+        }
+        .promo,
+        .map {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+      /* Mobiles */
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 18px;
+        }
+        .hero {
+          padding: 60px 20px;
+          height: auto;
+          text-align: center;
+        }
+        .menu-section {
+          flex-direction: column;
+        }
+        .menu-column {
+          width: 100%;
+        }
+        footer {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      /* Small phones */
+      @media (max-width: 480px) {
+        .hero h2 {
+          font-size: 1.2rem;
+        }
+        footer nav a {
+          margin: 0 10px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="ShopN" align="center">
+        <span class="LogoHolder">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/14810/14810308.png"
+            alt="Shop Logo"
+            class="coffee-logo"
+          />Timplado
+        </span>
+      </h1>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="left-col">
+            <h1 class="headline">Homebrewed Coffee,<br />Anytime, Anywhere</h1>
+            <div class="cta-row">
+              <div class="map-wrap">
+                <iframe
+                  class="map-iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.8583907685753!2d120.986782!3d14.607937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9fdf787ad9f%3A0xb4b1e00b1b881f6c!2sEspaña%20Blvd%20%26%20Padre%20Noval%20St%2C%20Sampaloc%2C%20Manila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1695456726123!5m2!1sen!2sph"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="promo">
+                <img src="images/Latteto.png" alt="Promo" />
+              </div>
+            </div>
+            <a
+              class="store-btn"
+              href="https://www.google.com/maps"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Check Our Physical Store
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="Contacts">
+      <div class="Contact-info">
+        <b><p>Contact Us:</p></b>
+        <p>Vergara, Kirk Samuel D. | Belaro, Leocadio IV</p>
+        <p>+63-928-555-1852</p>
+        <p>timplado@gmail.com</p>
+        <p>www.timplado.com</p>
+        <p>175 Felicidad St., Muntinlupa City, Manila</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footing">
+        <div class="footer-brand">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/14810/14810308.png"
+            alt="Timplado logo"
+          />
+          <div class="footer-brand">Timplado</div>
+        </div>
+        <div class="Button-Links">
+          <a href="index.html" target="blank">Home</a>
+          <a href="menu.html" target="blank">Menu</a>
+          <a href="events.html" target="blank">Events</a>
+        </div>
+        <p class="Copyright">© Timplado |&nbsp;&nbsp;</p>
+        <p class="attribution">Location icons created by Freepik - Flaticon</p>
+      </div>
+    </footer>
+  </body>
+</html>

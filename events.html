@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        overflow: hidden;
+      }
+      .back {
+        background: url("https://media.istockphoto.com/id/2153912560/photo/modern-coffee-shop-interior-with-tables-coffee-maker-pastries-and-walled-garden.jpg?s=2048x2048&w=is&k=20&c=ai9wPUkabZDBpl4t93_roqt-Jocc1FXwVHLFYmZ-v9c=")
+          no-repeat center center/cover;
+        position: absolute;
+        min-height: 100vh;
+        width: 100%;
+        padding-top: auto;
+      }
+
+      h2 {
+        color: rgb(0, 0, 0);
+        font-size: 3rem;
+        text-align: center;
+      }
+      .Fst-layer {
+        display: flex;
+        flex-direction: column;
+      }
+      .Trd-Layer {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        overflow: hidden;
+      }
+      /* <-------------------------Upper------------------------------> */
+      .Upper {
+        align-items: center;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .Live-Music {
+        background-color: bisque;
+      }
+      .Latte-Art {
+        background-color: bisque;
+      }
+      .Book-Club {
+        background-color: bisque;
+      }
+      .Live-Music,
+      .Latte-Art,
+      .Book-Club,
+      .Coffee-Tasting,
+      .Open-Mic {
+        background-color: bisque;
+        padding: 20px;
+        width: 600px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        border-radius: 15px;
+      }
+      .Inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      /* <-------------------------Lower------------------------------> */
+
+      .Lower {
+        align-items: center;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      .Coffee-Tasting {
+        background-color: bisque;
+      }
+      .Open-Mic {
+        background-color: bisque;
+      }
+
+      .Icon-coffee {
+        width: 30%;
+        height: 30%;
+      }
+
+      .Fth-Layer {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        justify-content: center;
+        background-color: #002119;
+        display: flex;
+        align-items: center;
+      }
+      .Last {
+        width: 30%;
+        height: 30%;
+        border-radius: 20px;
+      }
+      .Fth-Layer P {
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="ShopN" align="center">
+        Upcoming Events at
+        <span class="LogoHolder">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/14810/14810308.png"
+            alt="Shop Logo"
+            class="coffee-logo"
+          />Timplado
+        </span>
+      </h1>
+    </header>
+
+    <main>
+      <div class="back">
+        <div style="padding-top: 100px; padding-bottom: 140px">
+          <div class="Fst-layer">
+            <div class="Snd-layer">
+              <h2>Upcoming Events at Timplado</h2>
+            </div>
+
+            <div class="Trd-Layer">
+              <div class="Upper">
+                <div class="Live-Music">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3354/3354187.png"
+                    alt=""
+                    class="Icon-coffee"
+                  />
+                  <div class="Inner">
+                    <h3>Live Music</h3>
+                    <p>
+                      Every Friday at 7 PM, enjoy local acoustic performers
+                      while sipping your favorite brew.
+                    </p>
+                  </div>
+                  <img
+                    src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGl2ZSUyMG11c2ljfGVufDB8fDB8fHww"
+                    alt=""
+                    class="Last"
+                  />
+                </div>
+
+                <div class="Latte-Art">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3354/3354187.png"
+                    alt=""
+                    class="Icon-coffee"
+                  />
+                  <div class="Inner">
+                    <h3>Latte Art</h3>
+                    <p>
+                      Monthly Saturday morning workshops teaching customers how
+                      to create latte art designs.
+                    </p>
+                  </div>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661757421019-c63df167ca49?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TGF0dGUlMjBBcnQlMjBXb3Jrc2hvcHN8ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    class="Last"
+                  />
+                </div>
+
+                <div class="Book-Club">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3354/3354187.png"
+                    alt=""
+                    class="Icon-coffee"
+                  />
+                  <div class="Inner">
+                    <h3>Book Club</h3>
+                    <p>
+                      Join our community book club every first Monday evening.
+                      Coffee discounts for members.
+                    </p>
+                  </div>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1683887034327-169259e60076?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Qm9vayUyMENsdWJ8ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    class="Last"
+                  />
+                </div>
+              </div>
+
+              <div class="Lower">
+                <div class="Coffee-Tasting">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3354/3354187.png"
+                    alt=""
+                    class="Icon-coffee"
+                  />
+                  <div class="Inner">
+                    <h3>Coffee Tasting</h3>
+                    <p>
+                      Sample seasonal blends and learn about sourcing and
+                      roasting from our baristas.
+                    </p>
+                  </div>
+                  <img
+                    src="https://images.unsplash.com/photo-1558996260-4bac67dbd110?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q29mZmVlJTIwVGFzdGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                    class="Last"
+                  />
+                </div>
+
+                <div class="Open-Mic">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/3354/3354187.png"
+                    alt=""
+                    class="Icon-coffee"
+                  />
+                  <div class="Inner">
+                    <h3>Open Mic</h3>
+                    <p>
+                      A monthly showcase for poets, musicians, and storytellers.
+                      Free drink for performers.
+                    </p>
+                  </div>
+                  <img
+                    src="https://images.unsplash.com/photo-1648808678096-18f488fd6858?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8T3BlbiUyME1pY3xlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                    class="Last"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="Fth-Layer">
+              <p>
+                Join our vibrant community for exciting events, workshops, and
+                entertainment. There's always something brewing at Bean & Brew!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="Contacts">
+      <div class="Contact-info">
+        <b><p>Contact Us:</p></b>
+        <p>Vergara, Kirk Samuel D. | Belaro, Leocadio IV</p>
+        <p>+63-928-555-1852</p>
+        <p>timplado@gmail.com</p>
+        <p>www.timplado.com</p>
+        <p>175 Felicidad St., Muntinlupa City, Manila</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footing">
+        <div class="footer-brand">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/14810/14810308.png"
+            alt="Timplado logo"
+          />
+          <div class="footer-brand">Timplado</div>
+        </div>
+        <div class="Button-Links">
+          <a href="index.html" target="blank">Home</a>
+          <a href="menu.html" target="blank">Menu</a>
+          <a href="events.html" target="blank">Events</a>
+        </div>
+        <p class="Copyright">© Timplado |&nbsp;&nbsp;</p>
+        <p class="attribution">Location icons created by Freepik - Flaticon</p>
+      </div>
+    </footer>
+  </body>
+</html>
